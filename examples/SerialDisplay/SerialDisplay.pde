@@ -6,9 +6,9 @@
  *Library version:1.1
  */
 #include <Wire.h> 
-#include <LiquidCrystal_I2C.h>
+#include <SoftLiquidCrystal_I2C.h>
 
-LiquidCrystal_I2C lcd(0x27,20,4);  // set the LCD address to 0x27 for a 16 chars and 2 line display
+SoftLiquidCrystal_I2C lcd(0x27,20,4,12,13);  // set the LCD address to 0x27 for a 16 chars and 2 line display with pins 12 and 13 as SDA and SCL
 
 void setup()
 {

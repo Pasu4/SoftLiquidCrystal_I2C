@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.tdc": "json",
+        "*.pde": "cpp"
+    }
+}
