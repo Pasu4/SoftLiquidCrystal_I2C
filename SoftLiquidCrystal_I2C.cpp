@@ -51,6 +51,9 @@ SoftLiquidCrystal_I2C::SoftLiquidCrystal_I2C(uint8_t lcd_Addr,uint8_t lcd_cols,u
   _rows = lcd_rows;
   _backlightval = LCD_NOBACKLIGHT;
   _sw = SoftWire(sda, scl);
+
+  _sw.setRxBuffer(_rxBuffer, sizeof(_rxBuffer));
+  _sw.setTxBuffer(_txBuffer, sizeof(_txBuffer));
 }
 
 void SoftLiquidCrystal_I2C::oled_init(){

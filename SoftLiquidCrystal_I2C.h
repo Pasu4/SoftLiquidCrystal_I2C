@@ -126,7 +126,10 @@ private:
   uint8_t _cols;
   uint8_t _rows;
   uint8_t _backlightval;
+
   SoftWire _sw = SoftWire(0, 0); // Default value because no parameterless constructor
+  uint8_t _rxBuffer[32];
+  uint8_t _txBuffer[32];
 };
 
 #endif
