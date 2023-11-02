@@ -1,7 +1,7 @@
 {
   "name": "SoftLiquidCrystal_I2C",
   "keywords": "LCD, liquidcrystal, I2C",
-  "description": "LiquidCrystal_I2C for use with SoftWire",
+  "description": "Fork of LiquidCrystal_I2C for use with SoftWire",
   "repository":
   {
     "type": "git",
